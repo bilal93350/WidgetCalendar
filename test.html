@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+
+</head>
+
+<body >
+
+	...
+
+<script type="text/javascript">
+	var jours = new Array(
+"LUN",
+"MAR",
+"MER",
+"JEU",
+"VEN",
+"SAM",
+"DIM"
+);
+
+var mnt = document.getElementById('label');
+
+
+
+var mois = new Array(
+	"janvier", 
+	"fevrier", 
+	"mars", 
+	"avril", 
+	"mai", 
+	"juin", 
+	"juillet", 
+	"aout", 
+	"septembre", 
+	"octobre", 
+	"novembre", 
+	"decembre");
+
+function montrerDate(){
+	var date = new Date();
+	var jour = date.getDay(); 
+	var year = date.getFullYear();
+	var month = date.getMonth();
+	var t =  mois[month+1];
+	//mtn.innerHTML = mois[month+1];
+	alert(t);
+};
+
+	montrerDate();
+	</script>
+</body>
+
+</html>
+
